@@ -22,6 +22,13 @@ img {
   border-radius: 5px;
 }
 
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  background-color: rgb(121, 116, 116);
+  transform: scale(1.1);
+}
+
 .card-img {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
@@ -42,4 +49,9 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
